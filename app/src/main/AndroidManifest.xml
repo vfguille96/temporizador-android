@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- A partir de la API 26 no se puede registrar un BroadcastReceiver enh el Manifest, por seguridad.-->
+
+        <receiver android:name=".TemporizadorReceiver">
+            <!--<intent-filter>
+                <action android:name="com.example.broadcastalarmmanagerintent"></action>
+            </intent-filter>-->
+        </receiver>
     </application>
 
 </manifest>
